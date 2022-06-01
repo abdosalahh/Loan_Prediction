@@ -1,0 +1,117 @@
+from tkinter import *
+root = Tk()
+
+# creating a label widget
+root.title('EGYPTIAN AHLY BANK')
+#root.iconbitmap('D:/ai-gui/bank.ico')
+
+Label1 = Label(root, text="LOAN PREDICTION", fg="blue", font=('impact', 32))
+Labelc1 = Label(root, text="----------------------------------------", fg="gray")
+
+Label2 = Label(root, text="Name", font=4)
+E1 = Entry(root, width=30, borderwidth=5, font=4)
+E1.get()
+
+Label3 = Label(root, text="Age", font=4)
+E2 = Entry(root, width=30, borderwidth=5, font=4)
+E2.get()
+
+g = StringVar()
+Label4 = Label(root, text="Gender", font=4)
+R1 = Radiobutton(root, text="male", variable=g, value="male", font=4)
+R2 = Radiobutton(root, text="female", variable=g, value="female", font=4)
+g.get()
+
+y = StringVar()
+Label5 = Label(root, text="Married", font=4)
+R3 = Radiobutton(root, text="Yes", variable=y, value="yes", font=4)
+R4 = Radiobutton(root, text="No", variable=y, value="no", font=4)
+y.get()
+
+Label6 = Label(root, text="Dependents", font=4)
+E3 = Entry(root, width=30, borderwidth=5, font=4)
+E3.get()
+
+Label7 = Label(root, text="Education", font=4)
+E4 = Entry(root, width=30, borderwidth=5, font=4)
+E4.get()
+
+s = IntVar()
+Label8 = Label(root, text="Self Employed", font=4)
+R5 = Radiobutton(root, text="0", variable=s, value=0, font=4)
+R6 = Radiobutton(root, text="1", variable=s, value=1, font=4)
+s.get()
+
+Label9 = Label(root, text="Application Come", font=4)
+E5 = Entry(root, width=30, borderwidth=5, font=4)
+E5.get()
+
+Label10 = Label(root, text="Co Application Come", font=4)
+E6 = Entry(root, width=30, borderwidth=5, font=4)
+E6.get()
+
+Label11 = Label(root, text="Loan Amount", font=4)
+E7 = Entry(root, width=30, borderwidth=5, font=4)
+E7.get()
+
+Label12 = Label(root, text="Loan Amount Term", font=4)
+E8 = Entry(root, width=30, borderwidth=5, font=4)
+E8.get()
+
+c = IntVar()
+Label13 = Label(root, text="Credit History", font=4)
+R7 = Radiobutton(root, text="0", variable=c, value=0, font=4)
+R8 = Radiobutton(root, text="1", variable=c, value=1, font=4)
+c.get()
+
+Label14 = Label(root, text="Property area", font=4)
+E9 = Entry(root, width=30, borderwidth=5, font=4)
+E9.get()
+
+Labelc2 = Label(root, text="----------------------------------------", fg="gray")
+
+Button1 = Button(root, text="Logistic regression", width=20, fg="blue", font=('arial', 15))
+Button2 = Button(root, text="Dision tree", width=20, fg="blue", font=('arial', 15))
+Button3 = Button(root, text="SVM", width=20, fg="blue", font=('arial', 15))
+Button4 = Button(root, text="Cancel", width=20, fg="blue", font=('arial', 15), command=root.quit)
+
+# shoving it onto the screen
+Label1.grid(row=0, column=1)
+Labelc1.grid(row=1, column=1)
+Label2.grid(row=2, column=0)
+E1.grid(row=2, column=1)
+Label3.grid(row=3, column=0)
+E2.grid(row=3, column=1)
+Label4.grid(row=4, column=0)
+R1.grid(row=4 ,column=1)
+R2.grid(row=4 ,column=2)
+Label5.grid(row=5, column=0)
+R3.grid(row=5, column=1)
+R4.grid(row=5, column=2)
+Label6.grid(row=6, column=0)
+E3.grid(row=6, column=1)
+Label7.grid(row=7, column=0)
+E4.grid(row=7, column=1)
+Label8.grid(row=8, column=0)
+R5.grid(row=8, column=1)
+R6.grid(row=8, column=2)
+Label9.grid(row=9, column=0)
+E5.grid(row=9, column=1)
+Label10.grid(row=10, column=0)
+E6.grid(row=10, column=1)
+Label11.grid(row=11, column=0)
+E7.grid(row=11, column=1)
+Label12.grid(row=12, column=0)
+E8.grid(row=12, column=1)
+Label13.grid(row=13, column=0)
+R7.grid(row=13, column=1)
+R8.grid(row=13, column=2)
+Label14.grid(row=14, column=0)
+E9.grid(row=14, column=1)
+Labelc2.grid(row=15, column=1)
+Button1.grid(row=16, column=0)
+Button2.grid(row=16, column=1)
+Button3.grid(row=16, column=2)
+Button4.grid(row=17, column=1)
+
+root.mainloop()
